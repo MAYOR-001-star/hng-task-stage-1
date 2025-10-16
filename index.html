@@ -18,6 +18,18 @@
         background: linear-gradient(135deg, #f0f4ff, #ffffff);
         margin: 0;
         padding: 1rem;
+        overflow-x: hidden;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       article[data-testid="test-profile-card"] {
@@ -32,6 +44,7 @@
         align-items: center;
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeInUp 1s ease forwards;
       }
 
       article[data-testid="test-profile-card"]:hover {
@@ -55,6 +68,12 @@
         border-radius: 50%;
         object-fit: cover;
         border: 3px solid #0077ff;
+        transition: transform 0.5s ease, border-color 0.5s ease;
+      }
+
+      figure img[data-testid="test-user-avatar"]:hover {
+        transform: rotate(8deg) scale(1.05);
+        border-color: #0056cc;
       }
 
       p[data-testid="test-user-bio"] {
@@ -67,6 +86,20 @@
       [data-testid="test-user-time"] {
         font-weight: 600;
         color: #0077ff;
+        display: inline-block;
+        animation: shimmer 2s infinite linear;
+      }
+
+      @keyframes shimmer {
+        0% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.5;
+        }
       }
 
       nav[data-testid="test-user-social-links"] ul {
@@ -82,12 +115,14 @@
         color: #0077ff;
         text-decoration: none;
         font-weight: 500;
-        transition: color 0.3s;
+        transition: transform 0.3s, color 0.3s;
+        display: inline-block;
       }
 
       nav a:hover,
       nav a:focus {
         color: #0056cc;
+        transform: translateY(-3px) scale(1.05);
         text-decoration: underline;
         outline: none;
       }
@@ -96,6 +131,7 @@
         width: 100%;
         text-align: left;
         margin-top: 1rem;
+        animation: fadeInUp 1.2s ease forwards;
       }
 
       section h3 {
@@ -145,7 +181,7 @@
     <article data-testid="test-profile-card">
       <figure>
         <img
-          src="https://i.pravatar.cc/150?img=12"
+          src="./images/profile-pic.jpg"
           alt="Profile picture of Mayor Dev"
           data-testid="test-user-avatar"
         />
@@ -174,7 +210,7 @@
           <ul>
             <li>
               <a
-                href="https://twitter.com/mayordev"
+                href="https://x.com/AbdulazeezMay10"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="test-user-social-twitter"
@@ -183,7 +219,7 @@
             </li>
             <li>
               <a
-                href="https://github.com/mayordev"
+                href="https://github.com/MAYOR-001-star"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="test-user-social-github"
@@ -192,7 +228,7 @@
             </li>
             <li>
               <a
-                href="https://linkedin.com/in/mayordev"
+                href="https://www.linkedin.com/in/abdul-azeez-baruwa-505551316"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="test-user-social-linkedin"

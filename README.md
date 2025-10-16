@@ -13,20 +13,15 @@ All requirements have been implemented with correct `data-testid` attributes for
 
 ---
 
-## 🧩 Task Requirements Implemented
+🧩 Features Implemented
 
-| Feature | Description | data-testid |
-|----------|--------------|-------------|
-| Profile card container | Root wrapper for the component | `test-profile-card` |
-| User name | Plain text name | `test-user-name` |
-| Bio | Short biography paragraph | `test-user-bio` |
-| Current time (ms) | Dynamically updates using `Date.now()` | `test-user-time` |
-| Avatar | Image with `alt` text | `test-user-avatar` |
-| Social links list | Contains all social links | `test-user-social-links` |
-| Hobbies | List of hobbies | `test-user-hobbies` |
-| Dislikes | List of dislikes | `test-user-dislikes` |
+Profile Card: Displays user info like name, bio, and avatar.
 
----
+Live Clock: Shows the current time (auto-updates).
+
+Social Links: Quick links to connected accounts.
+
+Hobbies & Dislikes: Lists rendered dynamically.
 
 ## 🧠 Accessibility & Semantics
 
@@ -39,8 +34,8 @@ All requirements have been implemented with correct `data-testid` attributes for
 
 ## 🖥️ Technologies Used
 
-- **HTML5** (Semantic structure)  
-- **CSS3** (Flexbox, responsiveness, hover effects)  
+- **HTML5** (Semantic structure)
+- **CSS3** (Flexbox, responsiveness, hover effects)
 - **JavaScript (ES6)** (Dynamic time rendering)
 
 ---
@@ -50,3 +45,4 @@ All requirements have been implemented with correct `data-testid` attributes for
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/profile-card.git
+   ```
