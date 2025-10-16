@@ -7,9 +7,9 @@ All requirements have been implemented with correct `data-testid` attributes for
 
 ## 🚀 Live Demo
 
-🔗 **Live URL:** [https://your-deployment-link.netlify.app](https://your-deployment-link.netlify.app)
+🔗 **Live URL:** https://mayor-001-star.github.io/hng-task-stage-0/
 
-🔗 **GitHub Repo:** [https://github.com/yourusername/profile-card](https://github.com/yourusername/profile-card)
+🔗 **GitHub Repo:** https://github.com/MAYOR-001-star/hng-task-stage-0
 
 ---
 
@@ -44,5 +44,5 @@ Hobbies & Dislikes: Lists rendered dynamically.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/profile-card.git
+   git clone https://github.com/MAYOR-001-star/hng-task-stage-0.git
    ```
