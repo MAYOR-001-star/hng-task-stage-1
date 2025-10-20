@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Mayor</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Mayor</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p data-testid="email">
+        Email: <a href="mailto:mayor@gmail.com">mayor@gmail.com</a>
+      </p>
+      <p data-testid="slackDisplayName">Slack: mayor</p>
+      <p data-testid="githubURL">
+        <a href="https://github.com/mayor-dev" target="_blank"
+          >GitHub Profile</a
+        >
+      </p>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="successMsg"></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Mayor. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

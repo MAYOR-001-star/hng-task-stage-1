@@ -3,271 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mayor Dev | Profile Card</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: linear-gradient(135deg, #f0f4ff, #ffffff);
-        margin: 0;
-        padding: 1rem;
-        overflow-x: hidden;
-      }
-
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      article[data-testid="test-profile-card"] {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 40rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        animation: fadeInUp 1s ease forwards;
-      }
-
-      article[data-testid="test-profile-card"]:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-      }
-
-      header h2 {
-        margin: 0.5rem 0;
-        font-size: 1.5rem;
-        color: #1a1a1a;
-        width: 106%
-      }
-
-      figure {
-        margin: 0;
-      }
-
-      figure img[data-testid="test-user-avatar"] {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #0077ff;
-        transition: transform 0.5s ease, border-color 0.5s ease;
-      }
-
-      figure img[data-testid="test-user-avatar"]:hover {
-        transform: rotate(8deg) scale(1.05);
-        border-color: #0056cc;
-      }
-
-      p[data-testid="test-user-bio"] {
-        font-size: 0.95rem;
-        color: #333;
-        margin: 0.75rem 0 1rem;
-        line-height: 1.5;
-      }
-
-      [data-testid="test-user-time"] {
-        font-weight: 600;
-        color: #0077ff;
-        display: inline-block;
-        animation: shimmer 2s infinite linear;
-      }
-
-      @keyframes shimmer {
-        0% {
-          opacity: 0.5;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0.5;
-        }
-      }
-
-      nav[data-testid="test-user-social-links"] ul {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        list-style: none;
-        padding: 0;
-        margin: 1rem 0;
-      }
-
-      nav a {
-        color: #0077ff;
-        text-decoration: none;
-        font-weight: 500;
-        transition: transform 0.3s, color 0.3s;
-        display: inline-block;
-      }
-
-      nav a:hover,
-      nav a:focus {
-        color: #0056cc;
-        transform: translateY(-3px) scale(1.05);
-        text-decoration: underline;
-        outline: none;
-      }
-
-      section {
-        width: 100%;
-        text-align: left;
-        margin-top: 1rem;
-        animation: fadeInUp 1.2s ease forwards;
-      }
-
-      section h3 {
-        margin-bottom: 0.5rem;
-        color: #222;
-      }
-
-      section ul {
-        list-style: disc;
-        padding-left: 1.5rem;
-        margin: 0;
-      }
-
-      section ul li {
-        margin-bottom: 0.25rem;
-      }
-
-      @media (min-width: 768px) {
-        article[data-testid="test-profile-card"] {
-          flex-direction: row;
-          text-align: left;
-          align-items: center;
-          padding: 2rem;
-        }
-
-        figure {
-          flex: 0 0 150px;
-          margin-right: 1.5rem;
-        }
-
-        figure img {
-          width: 150px;
-          height: 150px;
-        }
-
-        header h2 {
-          font-size: 1.75rem;
-        }
-
-        nav ul {
-          justify-content: flex-start;
-        }
-      }
-    </style>
+    <title>Mayor | Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <article data-testid="test-profile-card">
-      <figure>
-        <img
-          src="./images/profile-pic.jpg"
-          alt="Profile picture of Mayor Dev"
-          data-testid="test-user-avatar"
-        />
-      </figure>
+    <header>
+      <nav>
+        <h1>Mayor</h1>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="profile-info">
-        <header>
-          <h2 data-testid="test-user-name">
-            Baruwa Abdul-azeez(MAYORB)
-          </h2>
-        </header>
+    <section class="hero">
+      <img
+        src="./images/profile-pic.jpg"
+        alt="Mayor profile picture"
+        data-testid="profilePicture"
+      />
+      <h2 data-testid="fullName">Mayor</h2>
+      <p data-testid="jobTitle">Frontend Developer</p>
+      <p data-testid="shortBio">
+        I build responsive and accessible web interfaces using modern HTML, CSS,
+        and JavaScript. Focused on clean design and seamless user experience.
+      </p>
+      <p data-testid="currentTimeUTC" class="time"></p>
+    </section>
 
-        <p data-testid="test-user-bio">
-          I'm a passionate frontend developer who loves building modern web
-          experiences, experimenting with UI/UX design, and mentoring upcoming
-          devs in the tech space.
-        </p>
+    <section class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Next.js</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
 
+    <section class="projects">
+      <h3>Projects</h3>
+      <div class="project">
+        <h4>Quiz App</h4>
         <p>
-          Current Time (ms):
-          <span data-testid="test-user-time"></span>
+          A timed quiz platform with scoring and leaderboard built using React
+          and Redux.
         </p>
-
-        <nav
-          aria-label="Social media links"
-          data-testid="test-user-social-links"
-        >
-          <ul>
-            <li>
-              <a
-                href="https://x.com/AbdulazeezMay10"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-twitter"
-                >Twitter</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/MAYOR-001-star"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-github"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/abdul-azeez-baruwa-505551316"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-linkedin"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <section>
-          <h3>Hobbies</h3>
-          <ul data-testid="test-user-hobbies">
-            <li>Coding</li>
-            <li>Football</li>
-            <li>Designing on Figma</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Dislikes</h3>
-          <ul data-testid="test-user-dislikes">
-            <li>Procrastination</li>
-            <li>Messy code</li>
-            <li>Unclear documentation</li>
-          </ul>
-        </section>
       </div>
-    </article>
+      <div class="project">
+        <h4>Podcast SaaS</h4>
+        <p>
+          A SaaS platform that allows users to generate, host, and manage
+          podcasts using AI.
+        </p>
+      </div>
+      <div class="project">
+        <h4>Portfolio Website</h4>
+        <p>
+          Personal portfolio showcasing my work and contact information built
+          with pure HTML, CSS, and JS.
+        </p>
+      </div>
+    </section>
 
-    <script>
-      const timeEl = document.querySelector('[data-testid="test-user-time"]');
-      function updateTime() {
-        timeEl.textContent = Date.now();
-      }
-      updateTime();
-      setInterval(updateTime, 1000);
-    </script>
+    <footer>
+      <p>&copy; 2025 Mayor. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

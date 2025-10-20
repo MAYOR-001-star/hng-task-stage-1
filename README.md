@@ -1,48 +1,80 @@
-# 🧑‍💻 HNG Internship - Frontend Wizards Stage 0 Task
+🧑‍💻 HNG Internship – Frontend Wizards Stage 1 Task
 
-This project is my submission for **HNG Frontend Track Stage 0** — a simple, accessible, and responsive **Profile Card** built using **semantic HTML**, **modern CSS**, and **vanilla JavaScript**.  
-All requirements have been implemented with correct `data-testid` attributes for automated testing.
+This project is my submission for the HNG Frontend Track Stage 1 — a continuation of my Stage 0 task.
+It expands the single profile card into a multi-page personal website with semantic HTML, accessible forms, and responsive layouts — all built using HTML, CSS, and JavaScript (no frameworks).
 
----
+🚀 Live Demo
 
-## 🚀 Live Demo
+🔗 Live URL: https://mayor-001-star.github.io/hng-task-stage-1/
 
-🔗 **Live URL:** https://mayor-001-star.github.io/hng-task-stage-0/
-
-🔗 **GitHub Repo:** https://github.com/MAYOR-001-star/hng-task-stage-0
-
----
+🔗 GitHub Repo: https://github.com/MAYOR-001-star/hng-task-stage-1
 
 🧩 Features Implemented
+🏠 Home Page (Stage 0 Base)
 
-Profile Card: Displays user info like name, bio, and avatar.
+Displays profile info (name, bio, avatar).
 
-Live Clock: Shows the current time (auto-updates).
+Dynamic UTC clock auto-updates every second.
 
-Social Links: Quick links to connected accounts.
+Skills and sample projects listed using semantic HTML.
 
-Hobbies & Dislikes: Lists rendered dynamically.
+📘 About Me Page (Stage 1)
 
-## 🧠 Accessibility & Semantics
+Structured with <main> and <section> tags for semantics.
 
-- Proper HTML5 semantic elements: `<article>`, `<header>`, `<figure>`, `<nav>`, `<section>`.
-- All links are keyboard-focusable and use `target="_blank"` with `rel="noopener noreferrer"`.
-- Avatar includes descriptive `alt` text.
-- Layout adapts cleanly from mobile to desktop using **Flexbox**.
+Contains personal reflections, goals, and experiences.
 
----
+Accessible headings hierarchy (<h2>, <h3>) for screen readers.
 
-## 🖥️ Technologies Used
+Each section includes correct data-testid attributes.
 
-- **HTML5** (Semantic structure)
-- **CSS3** (Flexbox, responsiveness, hover effects)
-- **JavaScript (ES6)** (Dynamic time rendering)
+📞 Contact Us Page (Stage 1)
 
----
+Fully functional contact form with validation:
 
-## ⚙️ How to Run Locally
+Full Name, Email, Subject, and Message fields are required.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/MAYOR-001-star/hng-task-stage-0.git
-   ```
+Email must follow standard name@example.com format.
+
+Message must contain at least 10 characters.
+
+Displays dynamic success and error messages.
+
+Accessibility: all inputs have labels and ARIA descriptors.
+
+Keyboard-navigable and screen-reader friendly.
+
+🧠 Accessibility & Semantics
+
+Proper HTML5 semantic structure throughout (<header>, <nav>, <main>, <section>, <footer>).
+
+Descriptive alt text for images.
+
+Linked <label> elements for every input.
+
+aria-describedby used to associate errors with form fields.
+
+Logical heading order for clear content hierarchy.
+
+📱 Responsiveness
+
+Layout adapts across mobile, tablet, and desktop viewports.
+
+Built using Flexbox and responsive units.
+
+Navigation converts into a column layout on small screens.
+
+🧰 Technologies Used
+
+HTML5 — semantic markup
+
+CSS3 — responsive styling with Flexbox
+
+JavaScript (ES6) — dynamic time and form validation logic
+
+⚙️ How to Run Locally
+git clone https://github.com/MAYOR-001-star/hng-task-stage-1.git
+cd hng-task-stage-1
+
+
+Then open index.html in your browser.
