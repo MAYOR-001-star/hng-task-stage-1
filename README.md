@@ -1,7 +1,10 @@
 🧑‍💻 HNG Internship – Frontend Wizards Stage 1 Task
 
 This project is my submission for the HNG Frontend Track Stage 1 — a continuation of my Stage 0 task.
-It expands the single profile card into a multi-page personal website with semantic HTML, accessible forms, and responsive layouts — all built using HTML, CSS, and JavaScript (no frameworks).
+
+It expands the single profile card into a multi-page personal website with semantic HTML,
+
+accessible forms, and responsive layouts — all built using HTML, CSS, and JavaScript (no frameworks).
 
 🚀 Live Demo
 
@@ -73,7 +76,9 @@ CSS3 — responsive styling with Flexbox
 JavaScript (ES6) — dynamic time and form validation logic
 
 ⚙️ How to Run Locally
+
 git clone https://github.com/MAYOR-001-star/hng-task-stage-1.git
+
 cd hng-task-stage-1
 
 
