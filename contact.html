@@ -20,34 +20,71 @@
 
     <section class="contact">
       <h2>Contact Me</h2>
-      <p data-testid="email">
-        Email: <a href="mailto:mayor@gmail.com">mayor@gmail.com</a>
-      </p>
-      <p data-testid="slackDisplayName">Slack: mayor</p>
-      <p data-testid="githubURL">
-        <a href="https://github.com/mayor-dev" target="_blank"
-          >GitHub Profile</a
-        >
-      </p>
 
       <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
+        <input
+          type="text"
+          id="name"
+          placeholder="Full name"
+          required
+          data-testid="test-contact-name"
+        />
+        <p
+          class="error"
+          id="error-name"
+          data-testid="test-contact-error-name"
+        ></p>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Email (e.g example.gmail.com)"
+          required
+          data-testid="test-contact-email"
+        />
+        <p
+          class="error"
+          id="error-email"
+          data-testid="test-contact-error-email"
+        ></p>
+
+        <input
+          type="text"
+          id="subject"
+          placeholder="Subject"
+          required
+          data-testid="test-contact-subject"
+        />
+        <p
+          class="error"
+          id="error-subject"
+          data-testid="test-contact-error-subject"
+        ></p>
+
         <textarea
           id="message"
           rows="5"
           placeholder="Your Message"
           required
+          data-testid="test-contact-message"
         ></textarea>
-        <button type="submit">Send Message</button>
+        <p
+          class="error"
+          id="error-message"
+          data-testid="test-contact-error-message"
+        ></p>
+
+        <button type="submit" data-testid="test-contact-submit">
+          Send Message
+        </button>
       </form>
-      <p id="successMsg"></p>
+
+      <p id="successMsg" data-testid="test-contact-success"></p>
     </section>
 
     <footer>
       <p>&copy; 2025 Mayor. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
+  <script src="./scripts/main.js"></script>
 </html>
