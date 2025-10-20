@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Time updater (only runs on pages that have .time)
   const timeEl = document.querySelector(".time");
   if (timeEl) {
     function updateTime() {
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateTime, 1000);
   }
 
-  // Contact form validation (only runs on pages that have #contactForm)
   const form = document.getElementById("contactForm");
   const successMsg = document.getElementById("successMsg");
 
