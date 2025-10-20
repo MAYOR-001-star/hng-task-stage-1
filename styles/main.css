@@ -92,6 +92,13 @@ nav a:hover,
   margin-bottom: 1rem;
 }
 
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
 .about section {
   margin-bottom: 2rem;
   padding: 1rem 2rem;
