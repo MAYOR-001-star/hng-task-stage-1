@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mayor | Portfolio</title>
+    <title>Mayor | Profile Card</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -18,70 +18,88 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <img
-        src="./images/profile-pic.jpg"
-        alt="Mayor profile picture"
-        data-testid="profilePicture"
-      />
-      <h2 data-testid="fullName">Baruwa Abdul-azeez Mayowa</h2>
-      <p data-testid="jobTitle">Frontend Developer</p>
-      <p data-testid="shortBio">
-        I build responsive and accessible web interfaces using modern HTML, CSS,
-        and JavaScript. Focused on clean design and seamless user experience.
-      </p>
-      <p data-testid="currentTimeUTC" class="time"></p>
-      <p data-testid="email">
-        <a href="mailto:mayorkunabdulazeez01@gmail.com@gmail.com">Email</a>
-      </p>
-      <p data-testid="slackDisplayName">Slack: MAYORB</p>
-      <p data-testid="githubURL">
-        <a href="https://github.com/MAYOR-001-star" target="_blank"
-          >GitHub Profile</a
-        >
-      </p>
-    </section>
+    <main>
+      <article class="profile-card" data-testid="test-profile-card">
+        <header>
+          <h2 data-testid="test-user-name">Baruwa Abdul-azeez Mayowa</h2>
+        </header>
 
-    <section class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </section>
+        <figure>
+          <img
+            src="./images/profile-pic.jpg"
+            alt="Portrait of Baruwa Abdul-azeez Mayowa"
+            data-testid="test-user-avatar"
+          />
+        </figure>
 
-    <section class="projects">
-      <h3>Projects</h3>
-      <div class="project">
-        <h4>Quiz App</h4>
-        <p>
-          A timed quiz platform with scoring and leaderboard built using React
-          and Redux.
+        <p data-testid="test-user-bio">
+          I’m a Frontend Developer passionate about building accessible,
+          responsive, and high-performance web interfaces using modern HTML,
+          CSS, and JavaScript frameworks.
         </p>
-      </div>
-      <div class="project">
-        <h4>Podcast SaaS</h4>
+
         <p>
-          A SaaS platform that allows users to generate, host, and manage
-          podcasts using AI.
+          <strong>Current Time (ms):</strong>
+          <span data-testid="test-user-time" id="userTime"></span>
         </p>
-      </div>
-      <div class="project">
-        <h4>Portfolio Website</h4>
-        <p>
-          Personal portfolio showcasing my work and contact information built
-          with pure HTML, CSS, and JS.
-        </p>
-      </div>
-    </section>
+
+        <nav data-testid="test-user-social-links">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/MAYOR-001-star"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Coding</li>
+            <li>Playing Football</li>
+            <li>Designing on Figma</li>
+            <li>Gaming</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Poor UI/UX</li>
+            <li>Slow websites</li>
+            <li>Unorganized code</li>
+          </ul>
+        </section>
+      </article>
+    </main>
 
     <footer>
       <p>&copy; 2025 Mayor. All rights reserved.</p>
     </footer>
+
+    <script src="./scripts/main.js"></script>
   </body>
-  <script src="./scripts/main.js"></script>
 </html>
