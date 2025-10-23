@@ -12,18 +12,17 @@
         <h1>Mayor</h1>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="contact">
-        <h2>Contact Me</h2>
+        <h2>Contact Us</h2>
 
         <form id="contactForm" novalidate>
-          <!-- Name Field -->
           <label for="name">Full Name</label>
           <input
             type="text"
@@ -40,7 +39,6 @@
             data-testid="test-contact-error-name"
           ></p>
 
-          <!-- Email Field -->
           <label for="email">Email</label>
           <input
             type="email"
@@ -57,7 +55,6 @@
             data-testid="test-contact-error-email"
           ></p>
 
-          <!-- Subject Field -->
           <label for="subject">Subject</label>
           <input
             type="text"
@@ -74,7 +71,6 @@
             data-testid="test-contact-error-subject"
           ></p>
 
-          <!-- Message Field -->
           <label for="message">Your Message</label>
           <textarea
             id="message"
@@ -90,8 +86,6 @@
             id="error-message"
             data-testid="test-contact-error-message"
           ></p>
-
-          <!-- Submit -->
           <button type="submit" data-testid="test-contact-submit">
             Send Message
           </button>
