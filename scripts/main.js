@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const timeEl = document.querySelector(".time");
+  const timeEl = document.querySelector("#userTime");
   if (timeEl) {
     function updateTime() {
       timeEl.textContent = "Current Time (milliseconds): " + Date.now();
